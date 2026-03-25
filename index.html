@@ -23,56 +23,41 @@
 
 </head>
 <body class="bg-gray-200 min-h-screen flex items-center justify-center">
-    <div id="loginPage" class="h-screen flex items-center justify-center bg-gray-100">
 
-  <div class="bg-white p-8 grid justify-center rounded-xl shadow-lg w-80">
-    <img class=" ml-12 mb-5" src="./assets/github-logo.png" alt="">
-    <h1 class="text-xl font-semibold text-center mb-2">GitHub Issues Tracker</h1>
+    <div id="loginPage" class="h-screen flex items-center justify-center ">
+        <div class="bg-white p-8 grid justify-center rounded-xl  w-80">
+            <img class=" ml-12 mb-5" src="./assets/github-logo.png" alt="">
+            <h1 class="text-xl font-semibold text-center mb-2">GitHub Issues Tracker</h1>
+            <p class="text-center text-gray-400 text-sm mb-5">Sign to manage your issues</p>
+            
+            <form action="">
+                <div>
+                    <label class="text-sm font-medium">Username</label>
+                    <input id="username" type="text" placeholder="Username" class="input input-bordered w-full mb-2"/>
+                    <p class="text-xs text-blue-500 ">Default: admin</p>
+                </div>
+                
+                <div>
+                    <label class="text-sm font-medium">Password</label>
+                    <input id="password" type="password" placeholder="Password" class="input input-bordered w-full mb-2"/> <p class="text-xs text-blue-500 mb-4">Default: admin123</p>
+                </div>
+                
+                <button onclick="login()" class="btn w-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white border-none">Sign In</button>
+            </form>
 
-    <p class="text-center text-gray-400 text-sm mb-5">Sign to manage your issues</p>
-    
-    
-  <form action="">
-    <div>
-      <label class="text-sm font-medium">Username</label>
-    <input id="username" type="text" placeholder="Username"
-      class="input input-bordered w-full mb-3"/>
-              <p class="text-xs text-blue-500 mt-1">Default: admin</p>
-  </div>
-
-    
-    
-     <div>
-         <label class="text-sm font-medium">Password</label>
-    <input id="password" type="password" placeholder="Password"
-      class="input input-bordered w-full mb-4"/>
-              <p class="text-xs text-blue-500 mt-1">Default: admin123</p>
-     </div>
-
-
-    <button onclick="login()"
-      class="btn w-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white border-none">
-      Sign In
-    </button>
-  </form>
-
-    <!-- <p class="text-center text-xs text-gray-400 mt-3">
-      admin / admin123
-    </p> -->
-    <div class="divider text-sm">OR</div>
-    <div class="border border-gray-300 rounded-md p-4 text-center text-sm">
-      <p class="text-gray-500 mb-1">Demo Credentials:</p>
-      <p>Username: <b>admin</b></p>
-      <p>Password: <b>admin123</b></p>
+            <div class="divider text-sm">OR</div>
+            <div class="border border-gray-300 rounded-md p-4 text-center text-sm">
+                <p class="text-gray-500 mb-1">Demo Credentials:</p>
+                <p>Username: <b>admin</b></p>
+                <p>Password: <b>admin123</b></p>
+            </div>
+        </div>
     </div>
 
-  </div>
 
 
+  <script src="./script.js"></script>
 
-
-  </div>
-  
 
 </body>
 </html>
